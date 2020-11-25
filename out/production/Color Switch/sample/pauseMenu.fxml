@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PauseMenu">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/gameviewbg.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="cA" fill="#1f93ff00" layoutX="200.0" layoutY="191.0" radius="55.0" stroke="AQUA" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Circle>
+      <Text fill="AQUA" layoutX="189.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Button fx:id="save" layoutX="145.0" layoutY="134.0" mnemonicParsing="false" opacity="0.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-radius: 2000; -fx-background-color: #00ffff;" text="Save">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Circle fx:id="cR" fill="#1f93ff00" layoutX="200.0" layoutY="322.0" radius="55.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Circle>
+      <Text fill="RED" layoutX="172.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restart">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Button fx:id="restart" layoutX="145.0" layoutY="267.0" mnemonicParsing="false" onAction="#RestartGame" opacity="0.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-radius: 200; -fx-background-color: #ff0000;" text="Restart">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Circle fx:id="cG" fill="#1f93ff00" layoutX="200.0" layoutY="449.0" radius="55.0" stroke="LIME" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Circle>
+      <Text fill="LIME" layoutX="185.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Button fx:id="Home" layoutX="145.0" layoutY="394.0" mnemonicParsing="false" onAction="#exitHome" opacity="0.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-radius: 200; -fx-background-color: #00ff00;" text="Home">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Circle fx:id="cY" fill="#1f93ff00" layoutX="200.0" layoutY="584.0" radius="55.0" stroke="YELLOW" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Circle>
+      <Text fill="YELLOW" layoutX="167.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resume">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Button fx:id="back" layoutX="145.0" layoutY="528.0" mnemonicParsing="false" opacity="0.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-radius: 200; -fx-background-color: #ffff00;" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="SansSerif Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </Button>
+      <Label layoutX="81.0" layoutY="55.0" text="Pause Menu" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Italic" size="44.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+   </children>
+</Pane>

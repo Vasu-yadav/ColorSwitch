@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Game">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/gameviewbg.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="ball" fill="#f8f5f5" layoutX="200.0" layoutY="529.0" onMouseClicked="#startOnclick" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="10.0" layoutX="150.0" layoutY="238.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 10;" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="10.0" layoutX="95.0" layoutY="293.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 10;" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="AQUA" height="10.0" layoutX="150.0" layoutY="348.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 10;" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="10.0" layoutX="205.0" layoutY="293.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 10;" width="100.0">
+         <effect>
+            <Glow level="1.0" />
+         </effect></Rectangle>
+      <Text fx:id="start_text" fill="#fffefe" layoutX="139.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click to start">
+         <font>
+            <Font name="SansSerif Regular" size="22.0" />
+         </font>
+      </Text>
+      <Line fx:id="start_line" endX="200.0" layoutX="200.0" layoutY="473.0" startX="-200.0" stroke="#f5f4f4" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" style="-fx-stroke-dash-array: 5;" />
+      <Button fx:id="game_btn" layoutX="1.0" layoutY="472.0" mnemonicParsing="false" onAction="#startOnclick" opacity="0.06" prefHeight="227.0" prefWidth="400.0" text="mouse click" />
+      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="1.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/star.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="184.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/star.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="354.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/menu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pause_btn" layoutX="354.0" layoutY="2.0" mnemonicParsing="false" onAction="#callPause" opacity="0.0" prefHeight="40.0" prefWidth="40.0" text="Pause" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="10.0" layoutX="149.0" layoutY="106.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 10;" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="10.0" layoutX="122.0" layoutY="62.0" rotate="-55.3" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 10;" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="AQUA" height="10.0" layoutX="178.0" layoutY="62.0" rotate="55.5" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 50; -fx-arc-height: 10;" width="100.0" />
+      <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="187.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/star.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

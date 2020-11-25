@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeScreen">
+   <children>
+      <Pane fx:id="PaneRoot" prefHeight="700.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="719.0" fitWidth="497.0" layoutX="-48.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/bg.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="126.0" layoutY="511.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="149.0" style="-fx-background-color: #de272C; -fx-background-radius: 7;" text="LOAD GAME" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Italic" size="18.0" />
+               </font>
+            </Button>
+            <Circle fx:id="c1" fill="#ff00d400" layoutX="200.0" layoutY="350.0" radius="112.0" stroke="#ff00d4" strokeType="INSIDE" strokeWidth="12.0" style="-fx-stroke-dash-array: 50;">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Circle>
+            <Circle fx:id="c2" fill="#1f93ff00" layoutX="201.0" layoutY="350.0" radius="83.0" stroke="AQUA" strokeType="INSIDE" strokeWidth="11.0" style="-fx-stroke-dash-array: 50;">
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Circle>
+            <Circle fill="RED" layoutX="201.0" layoutY="350.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#120840" layoutX="210.0" layoutY="367.0" points="-25.0, 10.0, 17.0, -15.0, -25.0, -44.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button fx:id="play_btn" layoutX="146.0" layoutY="300.0" mnemonicParsing="false" onAction="#startgame" opacity="0.0" prefHeight="100.0" prefWidth="111.0" text="play" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>
